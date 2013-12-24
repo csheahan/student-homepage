@@ -1,0 +1,292 @@
+<!Doctype html>
+<html>
+<head>
+  <title>Chris Sheahan</title>
+
+  <!--Meta-->
+  <meta name="description" content="Personal website of Chris Sheahan">
+  <meta content="text/html; charset=utf-8">
+
+  <!--CSS-->
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">
+  <link rel="stylesheet" type="text/css" href="css/pure-help.css">
+  <link rel="stylesheet" type="text/css" href="css/side-menu.css">
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+
+  <!--Javascript-->
+  
+</head>
+<body>
+  <div id="layout">
+
+    <!-- Menu toggle -->
+    <a href="#menu" id="menuLink" class="pure-menu-link">
+      <span></span>
+    </a>
+
+    <!-- Menu -->
+    <div id="menu">
+      <div class="pure-menu pure-menu-open">
+        <a class="pure-menu-heading">Sheahan</a>
+        <ul>
+           <li><a href="#Intro" onclick="introClick()">Intro/About Me</a></li>
+          <li><a href="#School" onclick="schoolClick()">School</a></li>
+          <li><a href="#Work" onclick="workClick()">Work</a></li>
+          <li><a href="#SideProjects" onclick="sideProjectsClick()">Side Projects</a></li>
+          <li><a href="#ContactMe" onclick="contactMeClick()">Contact Me</a></li>
+          <li><a href="http://www.cs.utexas.edu/~csheahan/Resume.pdf">My Resume</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Content -->
+    <div id="main">
+
+      <div class="content">
+        <div id="Intro" class="contentDiv">
+        <div class="header">
+          <h1>Welcome</h1>
+          <h2>You've reached the site of Chris Sheahan</h2>
+          <h2>UTCS Student, 2nd year</h2>
+        </div>
+        <div class="content">
+          <h2>About Me</h2>
+          <p>I'm currently a 2nd year Computer Science student at the University of Texas at Austin pursuing a Bachelor of Science in Computer Science. My interests in computer science vary greatly, ranging from security to software engineering to theory. I also love tinkering around with new technologies, whether it be hardware, a paradigm, or even a joke language such as <a href="http://en.wikipedia.org/wiki/Whitespace_%28programming_language%29">whitespace</a>. It is this constant stream of new that makes things fun and fresh.</p>
+          <p>I started programming in middle school. I learned that the TI-83 calculators we used in math were programmable, and it provided a fun and new way of passing time in class. I still remember my first program, infinitely printing out the phrase "Hello" and watching it print seemingly infinitely on the screen. This programming on calculators consisted mainly of text programs which were mostly jokes, until I took my first programming class second year of high school. Over the next 3 years, I would learn programming with Java, take the AP test, compete in competitive computer science via state UIL competitions, and participate in Robotics. It was after all of this that I knew computer science was for me. For what i've done in college, click <a href="#School" onclick="schoolClick()">here</a>.</p>
+          <p>Outside of Computer Science, I enjoy quite a few things. Having participated in Football (2 years varsity, both years made quarter-finals in state), Basketball, and Track (100M, 200M, 400M, and shotput throughout my career), I have a great appreciation for most if not all sports. When I have the free time, I love to keep active and enjoy taking on physical challenges. Along with sports, I have also found the human mind fascinating and love reading about psychology. Other than the mind and body, I just like to keep an open mind and try to constantly try something new.</p>
+        </div>
+      </div>
+
+      <div id="School" class="contentDiv">
+        <div class="header">
+          <h1>School</h1>
+          <h2>What I have done and accomplished at UT</h2>
+        </div>
+        <div class="content">
+          <h2>Extracurriculars</h2>
+          <p>
+            <h4>ACM - Association for Computing Machinery</h4>
+            <ul>
+              <li>Treasurer: May 2013 - Present</li>
+              <li>National ACM Member</li>
+              <li>Member: August 2012 - Present</li>
+            </ul>
+            <h4>Longhorn Lockpicking Club</h4>
+            <ul>
+              <li>Webmaster: May 2013 - Present</li>
+              <li>Member: August 2012 - Present</li>
+            </ul>
+          </p>
+          <h2>Relevant Classes</h2>
+          <h4>Current</h4>
+          <p>
+            <dl>
+              <dt>Operating Systems</dt>
+              <dd>C S 439</dd>
+            </dl>
+            <ul>
+              <li>Created a simple user shell</li>
+              <li>
+                PintOS
+                <ul>
+                  <li>Changed from a single threaded system to a multithreaded system</li>
+                  <li>Implemented argument passing via a stack and system calls such as exec, read, and wait</li>
+                  <li>Allowed stack growth via page faults and changed the virtual memory system from using contiguous allocation to using a page table, frame table, and supplemental page table</li>
+                  <li>Modified the filesystem to use multi-leveled index inodes and allowed the creation and traversal of directories</li>
+                </ul>
+              </li>
+            </ul>
+            <dl>
+              <dt>Perl</dt>
+              <dd>C S 105</dd>
+            </dl>
+            <ul>
+            </ul>
+          </p>
+          <h4>Past</h4>
+          <p>
+            <dl>
+              <dt>Computer Organization and Architecture</dt>
+              <dd>C S 429</dd>
+            </dl>
+            <ul>
+              <li>Wrote a y86 interpreter</li>
+              <li>Optimized a cache to run at over twice as fast</li>
+              <li>Wrote a topological sort</li>
+            </ul>
+            <dl>
+              <dt>Data Structures</dt>
+              <dd>C S 314</dd>
+            </dl>
+            <ul>
+              <li>Learned about the paradigm of Lisp</li>
+              <li>Solved algebraic equations with pattern matching</li>
+              <li>Experimented with path finding via Dijkstra's algorithm, Prim's algorithm, and A* pathfinding</li>
+              <li>Experimented with MapReduce</li>
+            </ul>
+            <dl>
+              <dt>Usability and User Centered Design</dt>
+              <dd>UGS 302</dd>
+            </dl>
+            <ul>
+              <li>Performed a heuristic evaluation on the UT School of Information Website</li>
+              <li>Studied other usability tests such as remote usability testing, surveys, field testing, and crowd-sourced usability testing</li>
+            </ul>
+            <dl>
+              <dt>Logic, Sets, and Functions</dt>
+              <dd>C S 313k</dd>
+            </dl>
+            <ul>
+              <li>Studied boolean formulas, predicates, basic proofs, graph theory, sets, functions, recurrences, and Big-O/Omega/Theta notations</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+
+      <div id="Work" class="contentDiv">
+        <div class="header">
+          <h1>Work</h1>
+          <h2>Where I have worked and what I have done</h2>
+        </div>
+        <div class="content">
+          <p>
+            <dl>
+              <dt><a href="http://www.bazaarvoice.com/">Bazaarvoice</a></dt>
+              <dd>Upcoming Summer 2014</dd>
+            </dl>
+            <dl>
+              <dt><a href="http://www.qualcomm.com/">Qualcomm</a></dt>
+              <dd>QCT Linux EIP Intern</dd>
+              <dd>May 2013 - August 2013</dd>
+            </dl>
+            <ul>
+              <li>Worked on a internal web application using html, javascript, and php</li>
+              <li>Created a stress tester application that will automate tests on new Android phones and tablets</li>
+            </ul>
+            <dl>
+              <dt><a href="http://www.founder-school.org/">Founder-School</a></dt>
+              <dd>Programmer</dd>
+              <dd>December 2012 - July 2013</dd>
+            </dl>
+            <ul>
+              <li>Programmed back end using node.js coupled with the express and compound.js frameworks</li>
+              <li>Used MongoDB for databasing operations</li>
+              <li>Prototyped frontend design using Jade, bootstrap, and JavaScript</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+
+      <div id="SideProjects" class="contentDiv">
+        <div class="header">
+          <h1>Side Projects</h1>
+          <h2>What I've Made in My Free Time</h2>
+        </div>
+        <div class="content">
+          <h4>HighLow-NES</h4>
+          <p>A simple card game coded in 6502 Assembly for the NES. The card game follows a simple mechanic: you flip over your first card, you guess if the next one will be higher or lower, and flip. Keep track of high scores and current streaks. For more information on the game, learning to code NES games, or the game itself, check out the <a href="https://github.com/csheahan/HighLow-NES">Github page</a>.</p>
+          <h4>UTCS Windows 8 Companion App</h4>
+          <p>A Windows 8 app made during a 24 hour hackathon (<a href="https://www.hackerleague.org/hackathons/hacktx/">HackTX</a>) with Matthew Rayermann(<a href="https://github.com/rolledback">Github</a>/<a href="http://www.linkedin.com/pub/matthew-rayermann/59/191/bab?trk=tbr">LinkedIn</a>) and Jon Lee(<a href="https://github.com/chenclee">Github</a>/<a href="http://www.linkedin.com/pub/jonathan-lee/66/241/788">LinkedIn</a>). We got the idea from an old app that existed before our new Computer Science building. We decided to make a Windows 8 metro app because none of us had any prior experience in C# or Windows 8 dev, so where better than a hackathon to learn such a skill. The backend comprised of completely perl code running commands on the CS machines which was then grabbed to the app to be parsed and displayed. In the end, we were able to show which machines were up, had someone physically in front of them, were down, how many users were logged in, the load averages, which printers were up, how many items were in the printer queues, and how many bits those items combined took up. Some features we wanted to add but weren't able to due to infamiliarity with Windows 8/time constraints were graphs, an auto ssh in button, and a button to ssh into a machine with the lowest users and load average. In the end, we won honorable mention from Microsoft. For more information, check out the <a href="https://github.com/rolledback/UTCS_Companion_HackTX">Github page</a>.</p>
+        </div>
+      </div>
+
+      <div id="ContactMe" class="contentDiv">
+        <div class="header">
+          <h1>My Information</h1>
+        </div>
+        <ul>
+          <li>
+            <strong>My Resume: </strong>
+            <a href="http://www.cs.utexas.edu/~csheahan/Resume.pdf">Resume</a>
+          </li>
+          <li>
+            <strong>My Personal Email: </strong>
+            <a href="mailto:chris.sheahan@live.com">chris.sheahan@live.com</a>
+          </li>
+          <li>
+            <strong>My Student Email</strong>
+            <a href="mailto:chris.sheahan@utexas.edu">chris.sheahan@utexas.edu</a>
+          </li>
+          <li>
+            <strong>Github: </strong>
+            <a href="https://github.com/csheahan">csheahan</a>
+          </li>
+          <li>
+            <strong>LinkedIn: </strong>
+            <a href="http://www.linkedin.com/in/chrissheahan">chrissheahan</a>
+          </li>
+        </ul>
+      </div>
+
+      </div>
+    </div>
+  </div>
+  <script src="js/ui.js"></script>
+  <script type="text/javascript">
+    var displayMap = {};
+
+    function hideAll() {
+      divs = document.getElementsByClassName("contentDiv");
+
+      for (var i = 0; i < divs.length; i++) {
+        if (divs[i].id in displayMap) {
+          divs[i].style.display = "none";
+        }
+        else {
+          displayMap[divs[i].id] = divs[i].style.display;
+          divs[i].style.display = "none";
+        }
+
+      }
+    }
+
+    function introClick() {
+      hideAll();
+      document.getElementById("Intro").style.display = displayMap['Intro'];
+    }
+
+    function schoolClick() {
+      hideAll();
+      document.getElementById("School").style.display = displayMap['School'];
+    }
+
+    function workClick() {
+      hideAll();
+      document.getElementById("Work").style.display = displayMap['Work'];
+    }
+
+    function sideProjectsClick() {
+      hideAll();
+      document.getElementById("SideProjects").style.display = displayMap['SideProjects'];
+    }
+
+    function contactMeClick() {
+      hideAll();
+      document.getElementById("ContactMe").style.display = displayMap['ContactMe'];
+    }
+
+    window.onload = function() {
+      var tokenizer = document.URL.split("#");
+      switch (tokenizer[tokenizer.length - 1]) {
+        case "Intro":
+          introClick();
+          break;
+        case "School":
+          schoolClick();
+          break;
+        case "Work":
+          workClick();
+          break;
+        case "SideProjects":
+          sideProjectsClick();
+          break;
+        case "ContactMe":
+          contactMeClick();
+          break;
+        default:
+          introClick();
+      }
+    }
+  </script>
+</body>
+</html>
