@@ -5,7 +5,7 @@
 
   <!--Meta-->
   <meta name="description" content="Personal website of Chris Sheahan">
-  <meta content="text/html; charset=utf-8">
+  <meta charset="utf-8">
 
   <!--CSS-->
   <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">
@@ -29,21 +29,21 @@
       <div class="pure-menu pure-menu-open">
         <a class="pure-menu-heading">Sheahan</a>
         <ul>
-           <li><a href="#Intro" onclick="introClick()">Intro/About Me</a></li>
-          <li><a href="#School" onclick="schoolClick()">School</a></li>
-          <li><a href="#Work" onclick="workClick()">Work</a></li>
-          <li><a href="#SideProjects" onclick="sideProjectsClick()">Side Projects</a></li>
-          <li><a href="#ContactMe" onclick="contactMeClick()">Contact Me</a></li>
-          <li><a href="http://www.cs.utexas.edu/~csheahan/Resume.pdf">My Resume</a></li>
-        </ul>
-      </div>
-    </div>
+         <li><a href="#Intro" onclick="introClick()">Intro/About Me</a></li>
+         <li><a href="#School" onclick="schoolClick()">School</a></li>
+         <li><a href="#Work" onclick="workClick()">Work</a></li>
+         <li><a href="#SideProjects" onclick="sideProjectsClick()">Side Projects</a></li>
+         <li><a href="#ContactMe" onclick="contactMeClick()">Contact Me</a></li>
+         <li><a href="http://www.cs.utexas.edu/~csheahan/Resume.pdf">My Resume</a></li>
+       </ul>
+     </div>
+   </div>
 
-    <!-- Content -->
-    <div id="main">
+   <!-- Content -->
+   <div id="main">
 
-      <div class="content">
-        <div id="Intro" class="contentDiv">
+    <div class="content">
+      <div id="Intro" class="contentDiv">
         <div class="header">
           <h1>Welcome</h1>
           <h2>You've reached the site of Chris Sheahan</h2>
@@ -64,82 +64,125 @@
         </div>
         <div class="content">
           <h2>Extracurriculars</h2>
-          <p>
-            <h4>ACM - Association for Computing Machinery</h4>
-            <ul>
-              <li>Treasurer: May 2013 - Present</li>
-              <li>National ACM Member</li>
-              <li>Member: August 2012 - Present</li>
-            </ul>
-            <h4>Longhorn Lockpicking Club</h4>
-            <ul>
-              <li>Webmaster: May 2013 - Present</li>
-              <li>Member: August 2012 - Present</li>
-            </ul>
-          </p>
+          <h4>ACM - Association for Computing Machinery</h4>
+          <ul>
+            <li>Treasurer: May 2013 - Present</li>
+            <li>National ACM Member</li>
+            <li>Member: August 2012 - Present</li>
+          </ul>
+          <h4>Longhorn Lockpicking Club</h4>
+          <ul>
+            <li>Webmaster: May 2013 - Present</li>
+            <li>Member: August 2012 - Present</li>
+          </ul>
           <h2>Relevant Classes</h2>
           <h4>Current</h4>
-          <p>
-            <dl>
-              <dt>Operating Systems</dt>
-              <dd>C S 439</dd>
-            </dl>
-            <ul>
-              <li>Created a simple user shell</li>
-              <li>
-                PintOS
-                <ul>
-                  <li>Changed from a single threaded system to a multithreaded system</li>
-                  <li>Implemented argument passing via a stack and system calls such as exec, read, and wait</li>
-                  <li>Allowed stack growth via page faults and changed the virtual memory system from using contiguous allocation to using a page table, frame table, and supplemental page table</li>
-                  <li>Modified the filesystem to use multi-leveled index inodes and allowed the creation and traversal of directories</li>
-                </ul>
-              </li>
-            </ul>
-            <dl>
-              <dt>Perl</dt>
-              <dd>C S 105</dd>
-            </dl>
-            <ul>
-            </ul>
-          </p>
+          <dl>
+            <dt>Algorithms and Complexity</dt>
+            <dd>C S 331</dd>
+          </dl>
+          <ul>
+            <li>
+              Went over topics such as:
+              <ul>
+                <li>Stable Marriage, Graph Problems and Traversals, Greedy Algorithms, and Divide and Conquer Algorithms</li>
+                <li>Dynamic Programming, Max-flow Min-cut problems, and the Ford-Fulkerson Algorithm</li>
+                <li>NP, NP-completeness, PSPACE, PSPACE-completeness, Undecidability, the Halting Problem</li>
+                <li>Approximation Algorithms and Randomized Algorithms</li>
+              </ul>
+            </li>
+            <li>Used techniques, discrete math, and proofs to implement and design algorithms to solve the same problem, the optimization of an auction (creating a Maximum Weight Maximum Cardinality Matching of a bipartite graph), in increasingly faster times. We started with the naive solution of O(n!), brought it down to O(n^2) through simple observations, and finally ended up at a runtime of O(n) taking a psuedo-dynamic approach.</li>
+            <li>Modified the above problem into computing a suitable selling price for each auction taking a second price approach where the second highest bid sets the selling price for the highest bidder. We first implemented this in O(n^2) time. We then took advantage of certain observations and created a new algorithm that ran in O(n) time.</li>
+          </ul>
+          <dl>
+            <dt>Computer Networks</dt>
+            <dd>C S 356</dd>
+          </dl>
+          <ul>
+            <li>Explored the theory of networks using the professors Abstract Protocol Notation.</li>
+            <li>
+              Through this AP Notation, learned about
+              <ul>
+                <li>TCP, UDP, and error detection in both. Also went over error recovery and flow control for TCP.</li>
+                <li>Local and global topology maintenance, along with routing and switching.</li>
+              </ul>
+            </li>
+          </ul>
+          <dl>
+            <dt>Intro Computational Linguistics</dt>
+            <dd>LIN 353C</dd>
+          </dl>
+          <ul>
+            <li>Implemented concepts we learned in class using python and the NLTK (Natural Langauge Toolkit) addon.</li>
+            <li>
+              Went over concepts such as:
+              <ul>
+                <li>Regular Expressions</li>
+                <li>Finite State Automata and Transducers</li>
+                <li>Part-of-Speech Tagging and Chunking</li>
+                <li>Classification</li>
+              </ul>
+            </li>
+          </ul>
           <h4>Past</h4>
-          <p>
-            <dl>
-              <dt>Computer Organization and Architecture</dt>
-              <dd>C S 429</dd>
-            </dl>
-            <ul>
-              <li>Wrote a y86 interpreter</li>
-              <li>Optimized a cache to run at over twice as fast</li>
-              <li>Wrote a topological sort</li>
-            </ul>
-            <dl>
-              <dt>Data Structures</dt>
-              <dd>C S 314</dd>
-            </dl>
-            <ul>
-              <li>Learned about the paradigm of Lisp</li>
-              <li>Solved algebraic equations with pattern matching</li>
-              <li>Experimented with path finding via Dijkstra's algorithm, Prim's algorithm, and A* pathfinding</li>
-              <li>Experimented with MapReduce</li>
-            </ul>
-            <dl>
-              <dt>Usability and User Centered Design</dt>
-              <dd>UGS 302</dd>
-            </dl>
-            <ul>
-              <li>Performed a heuristic evaluation on the UT School of Information Website</li>
-              <li>Studied other usability tests such as remote usability testing, surveys, field testing, and crowd-sourced usability testing</li>
-            </ul>
-            <dl>
-              <dt>Logic, Sets, and Functions</dt>
-              <dd>C S 313k</dd>
-            </dl>
-            <ul>
-              <li>Studied boolean formulas, predicates, basic proofs, graph theory, sets, functions, recurrences, and Big-O/Omega/Theta notations</li>
-            </ul>
-          </p>
+          <dl>
+            <dt>Operating Systems</dt>
+            <dd>C S 439</dd>
+          </dl>
+          <ul>
+            <li>Created a simple user shell</li>
+            <li>
+              PintOS
+              <ul>
+                <li>Changed from a single threaded system to a multithreaded system</li>
+                <li>Implemented argument passing via a stack and system calls such as exec, read, and wait</li>
+                <li>Allowed stack growth via page faults and changed the virtual memory system from using contiguous allocation to using a page table, frame table, and supplemental page table</li>
+                <li>Modified the filesystem to use multi-leveled index inodes and allowed the creation and traversal of directories</li>
+              </ul>
+            </li>
+          </ul>
+          <dl>
+            <dt>Perl</dt>
+            <dd>C S 105</dd>
+          </dl>
+          <ul>
+            <li>Learned how to code in Perl</li>
+            <li>Created a program to use IMDB's database to calculate a given actor/actress' degree from Kevin Bacon</li>
+          </ul>
+          <dl>
+            <dt>Computer Organization and Architecture</dt>
+            <dd>C S 429</dd>
+          </dl>
+          <ul>
+            <li>Wrote a y86 interpreter</li>
+            <li>Optimized a cache to run at over twice as fast</li>
+            <li>Wrote a topological sort</li>
+          </ul>
+          <dl>
+            <dt>Data Structures</dt>
+            <dd>C S 314</dd>
+          </dl>
+          <ul>
+            <li>Learned about the paradigm of Lisp</li>
+            <li>Solved algebraic equations with pattern matching</li>
+            <li>Experimented with path finding via Dijkstra's algorithm, Prim's algorithm, and A* pathfinding</li>
+            <li>Experimented with MapReduce</li>
+          </ul>
+          <dl>
+            <dt>Usability and User Centered Design</dt>
+            <dd>UGS 302</dd>
+          </dl>
+          <ul>
+            <li>Performed a heuristic evaluation on the UT School of Information Website</li>
+            <li>Studied other usability tests such as remote usability testing, surveys, field testing, and crowd-sourced usability testing</li>
+          </ul>
+          <dl>
+            <dt>Logic, Sets, and Functions</dt>
+            <dd>C S 313k</dd>
+          </dl>
+          <ul>
+            <li>Studied boolean formulas, predicates, basic proofs, graph theory, sets, functions, recurrences, and Big-O/Omega/Theta notations</li>
+          </ul>
         </div>
       </div>
 
@@ -149,31 +192,29 @@
           <h2>Where I have worked and what I have done</h2>
         </div>
         <div class="content">
-          <p>
-            <dl>
-              <dt><a href="http://www.bazaarvoice.com/">Bazaarvoice</a></dt>
-              <dd>Upcoming Summer 2014</dd>
-            </dl>
-            <dl>
-              <dt><a href="http://www.qualcomm.com/">Qualcomm</a></dt>
-              <dd>QCT Linux EIP Intern</dd>
-              <dd>May 2013 - August 2013</dd>
-            </dl>
-            <ul>
-              <li>Worked on a internal web application using html, javascript, and php</li>
-              <li>Created a stress tester application that will automate tests on new Android phones and tablets</li>
-            </ul>
-            <dl>
-              <dt><a href="http://www.founder-school.org/">Founder-School</a></dt>
-              <dd>Programmer</dd>
-              <dd>December 2012 - July 2013</dd>
-            </dl>
-            <ul>
-              <li>Programmed back end using node.js coupled with the express and compound.js frameworks</li>
-              <li>Used MongoDB for databasing operations</li>
-              <li>Prototyped frontend design using Jade, bootstrap, and JavaScript</li>
-            </ul>
-          </p>
+          <dl>
+            <dt><a href="http://www.bazaarvoice.com/">Bazaarvoice</a></dt>
+            <dd>Upcoming Summer 2014</dd>
+          </dl>
+          <dl>
+            <dt><a href="http://www.qualcomm.com/">Qualcomm</a></dt>
+            <dd>QCT Linux EIP Intern</dd>
+            <dd>May 2013 - August 2013</dd>
+          </dl>
+          <ul>
+            <li>Worked on a internal web application using html, javascript, and php</li>
+            <li>Created a stress tester application that will automate tests on new Android phones and tablets</li>
+          </ul>
+          <dl>
+            <dt><a href="http://www.founder-school.org/">Founder-School</a></dt>
+            <dd>Programmer</dd>
+            <dd>December 2012 - July 2013</dd>
+          </dl>
+          <ul>
+            <li>Programmed back end using node.js coupled with the express and compound.js frameworks</li>
+            <li>Used MongoDB for databasing operations</li>
+            <li>Prototyped frontend design using Jade, bootstrap, and JavaScript</li>
+          </ul>
         </div>
       </div>
 
@@ -218,75 +259,75 @@
         </ul>
       </div>
 
-      </div>
     </div>
   </div>
-  <script src="js/ui.js"></script>
-  <script type="text/javascript">
-    var displayMap = {};
+</div>
+<script src="js/ui.js"></script>
+<script type="text/javascript">
+var displayMap = {};
 
-    function hideAll() {
-      divs = document.getElementsByClassName("contentDiv");
+function hideAll() {
+  divs = document.getElementsByClassName("contentDiv");
 
-      for (var i = 0; i < divs.length; i++) {
-        if (divs[i].id in displayMap) {
-          divs[i].style.display = "none";
-        }
-        else {
-          displayMap[divs[i].id] = divs[i].style.display;
-          divs[i].style.display = "none";
-        }
-
-      }
+  for (var i = 0; i < divs.length; i++) {
+    if (divs[i].id in displayMap) {
+      divs[i].style.display = "none";
+    }
+    else {
+      displayMap[divs[i].id] = divs[i].style.display;
+      divs[i].style.display = "none";
     }
 
-    function introClick() {
-      hideAll();
-      document.getElementById("Intro").style.display = displayMap['Intro'];
-    }
+  }
+}
 
-    function schoolClick() {
-      hideAll();
-      document.getElementById("School").style.display = displayMap['School'];
-    }
+function introClick() {
+  hideAll();
+  document.getElementById("Intro").style.display = displayMap['Intro'];
+}
 
-    function workClick() {
-      hideAll();
-      document.getElementById("Work").style.display = displayMap['Work'];
-    }
+function schoolClick() {
+  hideAll();
+  document.getElementById("School").style.display = displayMap['School'];
+}
 
-    function sideProjectsClick() {
-      hideAll();
-      document.getElementById("SideProjects").style.display = displayMap['SideProjects'];
-    }
+function workClick() {
+  hideAll();
+  document.getElementById("Work").style.display = displayMap['Work'];
+}
 
-    function contactMeClick() {
-      hideAll();
-      document.getElementById("ContactMe").style.display = displayMap['ContactMe'];
-    }
+function sideProjectsClick() {
+  hideAll();
+  document.getElementById("SideProjects").style.display = displayMap['SideProjects'];
+}
 
-    window.onload = function() {
-      var tokenizer = document.URL.split("#");
-      switch (tokenizer[tokenizer.length - 1]) {
-        case "Intro":
-          introClick();
-          break;
-        case "School":
-          schoolClick();
-          break;
-        case "Work":
-          workClick();
-          break;
-        case "SideProjects":
-          sideProjectsClick();
-          break;
-        case "ContactMe":
-          contactMeClick();
-          break;
-        default:
-          introClick();
-      }
-    }
-  </script>
+function contactMeClick() {
+  hideAll();
+  document.getElementById("ContactMe").style.display = displayMap['ContactMe'];
+}
+
+window.onload = function() {
+  var tokenizer = document.URL.split("#");
+  switch (tokenizer[tokenizer.length - 1]) {
+    case "Intro":
+    introClick();
+    break;
+    case "School":
+    schoolClick();
+    break;
+    case "Work":
+    workClick();
+    break;
+    case "SideProjects":
+    sideProjectsClick();
+    break;
+    case "ContactMe":
+    contactMeClick();
+    break;
+    default:
+    introClick();
+  }
+}
+</script>
 </body>
 </html>
