@@ -1,0 +1,56 @@
+extends ../assets/templates/mainTemplate.jade
+
+block append vars
+  - var pathToRoot = "./"
+  - paths.School.active = true;
+  include ../assets/objects/extraCurriculars.jade
+  include ../assets/objects/classes.jade
+
+block body
+  div(class="topPadding")
+    div(class="container")
+      div(class="row")
+        div(class="col-lg-8 col-lg-offset-2")
+          div(class="text-center")
+            h1.
+              School
+            p.
+              Classes I have taken in my time at The University of Texas at
+              Austin
+
+          ul(class="nav nav-tabs" role="tablist")
+            li(role="presentation")
+              a(href="#extras" role="tab" data-toggle="tab").
+                Extra Curriculars
+            each data, semester in utClasses
+              li(role="presentation")
+                a(href="##{data.shortName}" role="tab" data-toggle="tab").
+                  #{semester}
+
+          div(class="tab-content")
+            div(role="tabpanel" class="tab-pane" id="extras")
+              each activity in extraCurriculars
+                h4.
+                  #{activity.Name}
+                ul
+                  each item in activity.Stats
+                    li.
+                      !{item}
+            each data, semester in utClasses
+              div(role="tabpanel" class="tab-pane" id="#{data.shortName}")
+                div(class="text-center")
+                  h2.
+                    #{semester}
+                each course in data.Classes
+                  h4.
+                    #{course.Name}
+                  p(class="closePTags").
+                    #{course.ID}
+                  if course.Webpage
+                    p
+                      a(href="#{course.Webpage}").
+                        #{course.Webpage}
+                  ul
+                    each item in course.Items
+                      li.
+                        !{item}

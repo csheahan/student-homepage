@@ -1,0 +1,26 @@
+extends ../assets/templates/mainTemplate.jade
+
+block append vars
+  - var pathToRoot = "./"
+  - paths["Contact Me"].active = true;
+
+block body
+  div(class="topPadding")
+    div(class="container")
+      div(class="row")
+        div(class="col-lg-8 col-lg-offset-2")
+          div(class="text-center")
+            h1.
+              Contact Information
+            p.
+              Like what you see? Contact me the following ways.
+            hr
+          ul
+            li.
+              My Resume: #[a(href="#{pathToRoot}" + "Resume.pdf") Resume]
+            li.
+              My Personal Email: #[a(href="mailto:chris.sheahan@live.com") chris.sheahan@live.com]
+            li.
+              Github: #[a(href="https://github.com/csheahan") csheahan]
+            li.
+              LinkedIn: #[a(href="https://www.linkedin.com/in/chrissheahan") Chris Sheahan]

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Title-->
+    <title>Chris Sheahan</title>
+    <!-- Meta-->
+    <meta name="description" content="Personal website of Chris Sheahan">
+    <meta charset="utf-8">
+    <!-- CSS-->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- JS-->
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script>
+      // Ensure jQuery is loaded
+      if (!window.jQuery) {
+        var jq = document.createElement("script");
+        jq.type = "text/javascript";
+        jq.src = "./" + "js/jquery-1.11.3.min.js";
+        document.getElementsByTagName("head")[0].appendChild(jq);
+      }
+    </script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
+  </head>
+  <body>
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="navbar-header"><a href="./index.html" class="navbar-brand">Chris Sheahan</a>
+        <button type="button" data-toggle="collapse" data-target="#navbar-main" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="work.html">Work</a></li>
+          <li><a href="projects.html">Side Projects</a></li>
+          <li><a href="school.html">School</a></li>
+          <li class="active"><a href="contact.html">Contact Me</a></li>
+          <li><a href="Resume.pdf">Resume</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="topPadding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <div class="text-center">
+              <h1>Contact Information</h1>
+              <p>Like what you see? Contact me the following ways.</p>
+              <hr>
+            </div>
+            <ul>
+              <li>My Resume: <a href="./Resume.pdf">Resume</a></li>
+              <li>My Personal Email: <a href="mailto:chris.sheahan@live.com">chris.sheahan@live.com</a></li>
+              <li>Github: <a href="https://github.com/csheahan">csheahan</a></li>
+              <li>LinkedIn: <a href="https://www.linkedin.com/in/chrissheahan">Chris Sheahan</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

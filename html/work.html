@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Title-->
+    <title>Chris Sheahan</title>
+    <!-- Meta-->
+    <meta name="description" content="Personal website of Chris Sheahan">
+    <meta charset="utf-8">
+    <!-- CSS-->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- JS-->
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script>
+      // Ensure jQuery is loaded
+      if (!window.jQuery) {
+        var jq = document.createElement("script");
+        jq.type = "text/javascript";
+        jq.src = "./" + "js/jquery-1.11.3.min.js";
+        document.getElementsByTagName("head")[0].appendChild(jq);
+      }
+    </script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
+  </head>
+  <body>
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="navbar-header"><a href="./index.html" class="navbar-brand">Chris Sheahan</a>
+        <button type="button" data-toggle="collapse" data-target="#navbar-main" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="work.html">Work</a></li>
+          <li><a href="projects.html">Side Projects</a></li>
+          <li><a href="school.html">School</a></li>
+          <li><a href="contact.html">Contact Me</a></li>
+          <li><a href="Resume.pdf">Resume</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="topPadding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <div class="text-center">
+              <h1>Work</h1>
+              <p>Where I have worked and what I have done</p>
+              <hr>
+            </div>
+            <div class="media">
+              <div class="media-left"><img src="./img/logos/xbox.png" class="media-object logo"></div>
+              <div class="media-body">
+                <h4><a href="http://www.microsoft.com/">Microsoft/Xbox</a></h4>
+                <p class="closePTags">Xbox Live Social Services Intern</p>
+                <p class="closePTags">May 2015 - August 2015</p>
+                <ul>
+                </ul>
+              </div>
+            </div>
+            <div class="media">
+              <div class="media-left"><img src="./img/logos/bazaarvoice.jpg" class="media-object logo"></div>
+              <div class="media-body">
+                <h4><a href="http://www.bazaarvoice.com/">Bazaarvoice</a></h4>
+                <p class="closePTags">R&amp;D Firebird TSF Intern</p>
+                <p class="closePTags">June 2014 - December 2014</p>
+                <ul>
+                  <li>Worked on tickets concerning tools, support, and frameworks on the Firebird product, a full stack JavaScript application to collect and display ratings and reviews.</li>
+                  <li>Created a npm installable node.js module to interface with various internal APIs within Bazaarvoice with the purpose of data collection and aggregation. Also set up automated tasks such as linting, unit testing, and documentation via gulp.</li>
+                  <li>Assisted in remaking a web interface for collecting and displaying real time information and analytics for the Firebird product.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="media">
+              <div class="media-left"><img src="./img/logos/qualcomm.png" class="media-object logo"></div>
+              <div class="media-body">
+                <h4><a href="https://www.qualcomm.com/">Qualcomm</a></h4>
+                <p class="closePTags">QCT Linux EIP Intern</p>
+                <p class="closePTags">May 2013 - August 2013</p>
+                <ul>
+                  <li>Worked on a internal web application using html, javascript, and php</li>
+                  <li>Created a stress tester application that will automate tests on new Android phones and tablets</li>
+                </ul>
+              </div>
+            </div>
+            <div class="media">
+              <div class="media-left"><img src="./img/logos/founderschool.png" class="media-object logo"></div>
+              <div class="media-body">
+                <h4>Founder-School</h4>
+                <p class="closePTags">Programmer</p>
+                <p class="closePTags">December 2012 - July 2013</p>
+                <ul>
+                  <li>Programmed back end using node.js coupled with the express and compound.js frameworks</li>
+                  <li>Used MongoDB for databasing operations</li>
+                  <li>Prototyped frontend design using Jade, bootstrap, and JavaScript</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,222 @@
+-
+  var utClasses = {
+    "Spring 2015": {
+      shortName: "spring2015",
+      Classes: [
+        {
+          Name: "Object Oriented Programming",
+          ID: "C S 371P",
+          Items: [
+            "Went over object oriented programming with a focus on the SOLID (Single responsibility, Open-closed, Liskov substitution, Interface segregation, Dependency inversion) principles.",
+            "Practiced psuedo-realistic C++ projects involving github, pair programming, and continuous integration via travis-ci."
+          ]
+        },
+
+        {
+          Name: "Compilers",
+          ID: "C S 375",
+          Webpage: "http://www.cs.utexas.edu/users/novak/cs375.html",
+          Items: [
+            "Covered the phases of the compiler, including lexical analysis, syntactic analysis/parsing, code optimization, code generation.",
+            "Covered Regular and Context Free Grammars, Types of Parsers, Symbol Tables, Array references, records, and pointers, Linking and Loading.",
+            "Implemented a Pascal compiler that compiled Pascal code into x86 assembly. This includes the following phases: " +
+              "<ul>" +
+                "<li>2 versions of lexical analysis, one using C and another using lex.</li>" +
+                "<li>A parser using yacc.</li>" +
+                "<li>A code generator that also performed optimizations.</li>" +
+              "</ul>"
+          ]
+        },
+
+        {
+          Name: "Operating Systems 2",
+          ID: "C S 350F",
+          Items: [
+            "Went over the following concepts: " +
+              "<ul>" +
+                "<li>System Calls</li>" +
+                "<li>Synchrnoization and Concurrency</li>" +
+                "<li>Virtual Memory</li>" +
+                "<li>File Systems and Disk Management</li>" +
+                "<li>Deadlock and Distributed Deadlock</li>" +
+                "<li>Security and Protection</li>" +
+                "<li>Generalized Rate Monotonic Scheduling</li>" +
+              "</ul>"
+          ]
+        }
+      ]
+    },
+
+    "Fall 2014": {
+      shortName: "fall2014",
+      Classes: [
+        {
+          Name: "Theory of Computation",
+          ID: "C S 353",
+          Webpage: "http://www.cs.utexas.edu/~diz/353/",
+          Items: [
+            "Convered topics including Turing Machines, Time and Space complexities and classes, useful cases for \"hard\" problems, and approaches to solving \"hard\" problems"
+          ]
+        },
+
+        {
+          Name: "Network Security",
+          ID: "C S 361S",
+          Webpage: "https://www.cs.utexas.edu/~ojensen/courses/cs361s/",
+          Items: [
+            "Went over a varienty of topic including cryptography, web and system attacks, defenses against attacks, and intrusion detection.",
+            "Performed various web attacks such as SQL injections, cookie hijacking, and cross site scripting on a broken web application within a VM.",
+            "Performed various attacks on broken C programs using various approaches, as outlined in the following articles:" +
+              "<ul>" +
+                "<li><a href=\"http://phrack.org/issues/49/14.html\">Buffer overflows to smash the stack.</a></li>" +
+                "<li><a href=\"http://phrack.org/issues/55/8.html\">Smashing a single byte of the frame pointer to smash the stack.</li>" +
+                "<li><a href=\"http://phrack.org/issues/60/10.html\">Integer overflows to bypass checks and smash the stack.</a></li>" +
+                "<li><a href=\"http://phrack.org/issues/57/8.html\">An attack on a malloc based on Doug Lea's Malloc</a></li>" +
+              "</ul>"
+          ]
+        },
+
+        {
+          Name: "PHP/SQL",
+          ID: "C S 105",
+          Webpage: "https://www.cs.utexas.edu/~jthywiss/C%20S%20105%202014%20Fall%2052715%20Syllabus.pdf",
+          Items: [
+            "Created a bidding web application on the LAMP platform.",
+            "Conformed web application to both HTML 5 and XML web standards as well as following CSS 2.1 standards."
+          ]
+        }
+      ]
+    },
+
+    "Spring 2014": {
+      shortName: "spring2014",
+      Classes: [
+        {
+          Name: "Algorithms and Complexity",
+          ID: "C S 331",
+          Webpage: "http://www.cs.utexas.edu/users/plaxton/c/331/index.html",
+          Items: [
+            "Went over topics such as:" +
+              "<ul>" +
+                "<li>Stable Marriage, Graph Problems and Traversals, Greedy Algorithms, and Divide and Conquer Algorithms</li>" +
+                "<li>Dynamic Programming, Max-flow Min-cut problems, and the Ford-Fulkerson Algorithm</li>" +
+                "<li>NP, NP-completeness, PSPACE, PSPACE-completeness, Undecidability, the Halting Problem</li>" +
+                "<li>Approximation Algorithms and Randomized Algorithms</li>" +
+              "</ul>",
+            "Used techniques, discrete math, and proofs to implement and design algorithms to solve the same problem, the optimization of an auction (creating a Maximum Weight Maximum Cardinality Matching of a bipartite graph), in increasingly faster times. We started with the naive solution of O(n!), brought it down to O(n^2) through simple observations, and finally ended up at a runtime of O(n) taking a psuedo-dynamic approach."
+          ]
+        },
+
+        {
+          Name: "Computer Networks",
+          ID: "C S 356",
+          Webpage: "http://www.cs.utexas.edu/~gouda/",
+          Items: [
+            "Explored the theory of networks using the professors self created Abstract Protocol Notation.",
+            "Through this AP Notation, learned about" +
+              "<ul>" +
+                "<li>TCP, UDP, and error detection in both. Also went over error recovery and flow control for TCP.</li>" +
+                "<li>Local and global topology maintenance, along with routing and switching.</li>" +
+              "</ul>"
+          ]
+        },
+
+        {
+          Name: "Intro to Computational Linguistics",
+          ID: "LIN 353C",
+          Webpage: "http://www.katrinerk.com/courses/intro-to-computational-linguistics-ug",
+          Items: [
+            "Implemented concepts we learned in class using python and the NLTK (Natural Langauge Toolkit) addon.",
+            "Went over concepts such as:" +
+              "<ul>" +
+                "<li>Regular Expressions</li>" +
+                "<li>Finite State Automata and Transducers</li>" +
+                "<li>Part-of-Speech Tagging and Chunking</li>" +
+                "<li>Classification</li>" +
+              "</ul>"
+          ]
+        }
+      ]
+    },
+
+    "Fall 2013": {
+      shortName: "fall2013",
+      Classes: [
+        {
+          Name: "Operating Systems",
+          ID: "C S 439",
+          Webpage: "http://www.cs.utexas.edu/~ans/classes/cs439/index.html",
+          Items: [
+            "Created a simple user shell",
+            "Modified a partially implemented Operating System called PintOS. More specifically: " +
+              "<ul>" +
+                "<li>Changed from a single threaded system to a multithreaded system</li>" +
+                "<li>Implemented argument passing via a stack and system calls such as exec, read, and wait</li>" +
+                "<li>Allowed stack growth via page faults and changed the virtual memory system from using contiguous allocation to using a page table, frame table, and supplemental page table</li>" +
+                "<li>Modified the filesystem to use multi-leveled index inodes and allowed the creation and traversal of directories</li>" +
+              "</ul>"
+          ]
+        },
+
+        {
+          Name: "Perl",
+          ID: "C S 105",
+          Webpage: "http://www.cs.utexas.edu/~cdunham/cs105-13f/",
+          Items: [
+            "Learned how to code in Perl",
+            "Created a program to use IMDB's database to calculate a given actor/actress' degree from Kevin Bacon"
+          ]
+        }
+      ]
+    },
+
+    "Spring 2013": {
+      shortName: "spring2013",
+      Classes: [
+        {
+          Name: "Computer Organization and Architecture",
+          ID: "C S 429",
+          Items: [
+            "Wrote a y86, a psuedo assembly language based on x86, interpreter",
+            "Optimized a cache to operate twice as efficiently through various optimizations",
+          ]
+        }
+      ]
+    },
+
+    "Fall 2012": {
+      shortName: "fall2012",
+      Classes: [
+        {
+          Name: "Data Structures",
+          ID: "C S 314",
+          Webpage: "http://www.cs.utexas.edu/users/novak/cs314.html",
+          Items: [
+            "Learned about the paradigm of Lisp",
+            "Solved algebraic equations with pattern matching",
+            "Experimented with path finding via Dijkstra's algorithm, Prim's algorithm, and A* pathfinding",
+            "Experimented with MapReduce"
+          ]
+        },
+
+        {
+          Name: "Usability and User Centered Design",
+          ID: "UGS 302",
+          Webpage: "http://courses.ischool.utexas.edu/Bias_Randolph/2013/Spring/UGS303/index.html",
+          Items: [
+            "Performed a heuristic evaluation on the UT School of Information Website",
+            "Studied other usability tests such as remote usability testing, surveys, field testing, and crowd-sourced usability testing"
+          ]
+        },
+
+        {
+          Name: "Logic, Sets, and Functions",
+          ID: "C S 313K",
+          Webpage: "http://www.cs.utexas.edu/~gouda/",
+          Items: [
+            "Studied boolean formulas, predicates, basic proofs, graph theory, sets, functions, recurrences, and Big-O/Omega/Theta notations"
+          ]
+        }
+      ]
+    }
+  }

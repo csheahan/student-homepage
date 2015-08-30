@@ -1,0 +1,39 @@
+extends ../assets/templates/mainTemplate.jade
+
+block append vars
+  - var pathToRoot = "./"
+  -paths["Side Projects"].active = true;
+  include ../assets/objects/sideprojects.jade
+
+block body
+  div(class="topPadding")
+    div(class="container")
+      div(class="row")
+        div(class="col-lg-8 col-lg-offset-2")
+          div(class="text-center")
+            h1.
+              Projects
+            p.
+              Things I have made in my free time
+            p
+              a(href="https://github.com/csheahan").
+                Check out my github profile
+              |  to see some of the things I have made.
+
+          ul(class="nav nav-tabs" role="tablist")
+            each project in sideprojects
+              li(role="presentation")
+                a(href="##{project.shortName}" role="tab" data-toggle="tab").
+                  #{project.TabName}
+
+          div(class="tab-content")
+            each project in sideprojects
+              div(role="tabpanel" class="tab-pane" id="#{project.shortName}")
+                div(class="text-center")
+                  h2.
+                    #{project.Name}
+                  if project.Images
+                    each pictureurl in project.Images
+                      img(src="#{pictureurl}" class="projectPic")
+                p.
+                  !{project.Description}

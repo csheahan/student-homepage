@@ -1,0 +1,39 @@
+extends ../assets/templates/mainTemplate.jade
+
+block append vars
+  - var pathToRoot = "./"
+  - paths.Work.active = true;
+  include ../assets/objects/work.jade
+
+block body
+  div(class="topPadding")
+    div(class="container")
+      div(class="row")
+        div(class="col-lg-8 col-lg-offset-2")
+          div(class="text-center")
+            h1.
+              Work
+            p.
+              Where I have worked and what I have done
+            hr
+          each company, name in work
+            div(class="media")
+              if company.Logo
+                div(class="media-left")
+                  img(class="media-object logo" src="#{company.Logo}")
+              div(class="media-body")
+                if company.Webpage
+                  h4
+                    a(href="#{company.Webpage}").
+                      #{name}
+                else
+                  h4.
+                    #{name}
+                p(class="closePTags").
+                  #{company.Title}
+                p(class="closePTags").
+                  #{company.DateRange}
+                ul
+                  each item in company.Deliverables
+                    li.
+                      #{item}

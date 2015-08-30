@@ -1,0 +1,74 @@
+block vars
+  - var pathToRoot = ""
+  - var resumeUpdated = "July 1st, 2015"
+  -
+    var paths = {
+      Work: {
+        path: pathToRoot + "work.html"
+      },
+      "Side Projects": {
+        path: pathToRoot + "projects.html"
+      },
+      School: {
+        path: pathToRoot + "school.html"
+      },
+      "Contact Me": {
+        path: pathToRoot + "contact.html"
+      },
+      Resume: {
+        path: pathToRoot + "Resume.pdf"
+      }
+    }
+
+doctype html
+html(lang="en")
+  head
+    // Title
+    block title
+      title Chris Sheahan
+
+    // Meta
+    block meta
+      meta(name="description" content="Personal website of Chris Sheahan")
+      meta(charset="utf-8")
+
+    // CSS
+    block css
+      link(rel="stylesheet" href=pathToRoot+"css/bootstrap.min.css")
+      link(rel="stylesheet" href=pathToRoot+"css/main.css")
+
+    // JS
+    block js
+      script(src="https://code.jquery.com/jquery-1.11.3.min.js")
+      script.
+        // Ensure jQuery is loaded
+        if (!window.jQuery) {
+          var jq = document.createElement("script");
+          jq.type = "text/javascript";
+          jq.src = "#{pathToRoot}" + "js/jquery-1.11.3.min.js";
+          document.getElementsByTagName("head")[0].appendChild(jq);
+        }
+      script(src=pathToRoot+"js/bootstrap.min.js")
+      script(src=pathToRoot+"js/main.js")
+  body
+    block navbar
+      div(class="navbar navbar-default navbar-fixed-top")
+        div(class="navbar-header")
+          a(href="#{pathToRoot}index.html" class="navbar-brand").
+            Chris Sheahan
+          button(class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main")
+            span(class="icon-bar")
+            span(class="icon-bar")
+            span(class="icon-bar")
+        div(class="navbar-collapse collapse")
+          ul(class="nav navbar-nav")
+            each path, name in paths
+              if path.active
+                li(class="active")
+                  a(href="#{path.path}").
+                    #{name}
+              else
+                li
+                  a(href="#{path.path}").
+                    #{name}
+    block body

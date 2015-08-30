@@ -1,3 +1,6 @@
-Right now it is mainly for distributing my resume and info.
 
-[Link Here](http://www.cs.utexas.edu/~csheahan/)
+STEPS
+- Ensure node is installed
+- Ensure Jade is installed
+-- sudo npm install jade --global
+

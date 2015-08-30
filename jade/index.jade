@@ -1,0 +1,47 @@
+extends ../assets/templates/mainTemplate.jade
+
+block append vars
+  - var pathToRoot = "./"
+
+block body
+  header
+    div(class="intro")
+      div(class="container")
+        h1.
+          Chris Sheahan
+        hr(class="smallOrangeHR")
+        h3.
+          Student at the University of Texas
+
+  div(id="aboutMe" class="container")
+    div(class="row")
+      div(class="col-lg-8 col-lg-offset-2 text-center")
+        h3.
+          About Me
+        hr
+
+        p.
+          I'm a 4th year Computer Science student at the University of Texas
+          at Austin. I enjoy topics related to Computer Science Theory,
+          security, including physical, virtual, and theoretical security,
+          and sofware engineering. I also enjoy cooking and baking, health and
+          fitness, and sports.
+
+        p.
+          Sometimes I make things. #[a(href="#{pathToRoot}" + "projects.html") Click here] for more.
+
+        p.
+          I've worked at a couple of cool companies. #[a(href="#{pathToRoot}" + "work.html") Click here]
+          to see where I have worked and what I have done.
+
+        p.
+          I currently go to school. #[a(href="#{pathToRoot}" + "school.html") Click here] to find out what
+          extracurriculars I am involved in and what classes I have taken.
+
+        p.
+          Like what you see? Feel free to #[a(href="#{pathToRoot}" + "contact.html") contact me] in whatever
+          way works best for you.
+
+        p.
+          Want a quick summary of me? Feel free to check out
+          #[a(href="#{pathToRoot}" + "Resume.pdf") my resume] (Last updated #{resumeUpdated})
