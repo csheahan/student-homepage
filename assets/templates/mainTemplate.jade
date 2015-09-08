@@ -56,11 +56,11 @@ html(lang="en")
         div(class="navbar-header")
           a(href="#{pathToRoot}index.html" class="navbar-brand").
             Chris Sheahan
-          button(class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main")
+          button(class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar")
             span(class="icon-bar")
             span(class="icon-bar")
             span(class="icon-bar")
-        div(class="navbar-collapse collapse")
+        div(id="navbar" class="navbar-collapse collapse")
           ul(class="nav navbar-nav")
             each path, name in paths
               if path.active
