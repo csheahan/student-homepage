@@ -46,3 +46,16 @@ header {
   max-width: 600px;
   padding-bottom: 1em;
 }
+
+.carousel {
+  max-height: 29em;
+  height: 29em;
+  overflow: hidden;
+}
+
+.carousel-inner img {
+  margin: auto;
+  padding-bottom: 4em;
+  max-height: 25em;
+  width: auto;
+}

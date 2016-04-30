@@ -1,10 +1,10 @@
-extends ../assets/templates/mainTemplate.jade
+extends ./templates/mainTemplate.jade
 
 block append vars
   - var pathToRoot = "./"
   - paths.School.active = true;
-  include ../assets/objects/extraCurriculars.jade
-  include ../assets/objects/classes.jade
+  include ./objects/extraCurriculars.jade
+  include ./objects/classes.jade
 
 block body
   div(class="topPadding")
