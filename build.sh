@@ -14,7 +14,7 @@ cp -r assets/img/ html/
 cp -r assets/fonts/ html/
 cp -r assets/css/ html/
 
-cp assets/Resume.pdf html/
+cp assets/csheahan_Resume.pdf html/
 
 jade --pretty jade --out html
 
