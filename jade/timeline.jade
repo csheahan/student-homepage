@@ -1,0 +1,59 @@
+extends ./templates/mainTemplate.jade
+
+block append vars
+  - var pathToRoot = "./"
+  - paths.Timeline.active = true;
+  include ./objects/timeline.jade
+
+block append css
+  link(rel="stylesheet" href=pathToRoot+"css/font-awesome.min.css")
+  link(rel="stylesheet" href=pathToRoot+"css/timeline.css")
+  link(rel="stylesheet" href=pathToRoot+"css/sport-font.css")
+
+block body
+  div(class="topPadding")
+    div(class="container")
+      div(class="row")
+        div(class="col-lg-8 col-lg-offset-2")
+          div(class="text-center")
+            h1.
+              Timeline
+            p.
+              An interactive timeline of my accomplishments.
+            label
+              input(type="checkbox" id="highCheck")
+              | High School
+            label
+              input(type="checkbox" id="collegeCheck" checked).
+              | College
+            label
+              input(type="checkbox" id="scholarshipCheck" checked).
+              | Scholarships
+            label
+              input(type="checkbox" id="internCheck" checked).
+              | Internships
+            label
+              input(type="checkbox" id="workCheck" checked).
+              | Work
+            hr
+          ul(class="timeline")
+            each obj in timeline
+              if obj.type == "date"
+                li(class="#{obj.keywords}")
+                  div(class="timeline-date").
+                    #{obj.date}
+              else if obj.type == "event"
+                li(class="timeline-inverted #{obj.keywords}")
+                  if obj.icon
+                    div(class="timeline-badge #{obj.icon}")
+                  div(class="timeline-card")
+                    div(class="timeline-heading")
+                      h4(class="timeline-title").
+                        #{obj.title}
+                      p(class="timeline-time").
+                        #{obj.time}
+                    div(class="timeline-body")
+                      p.
+                        #{obj.body}
+
+  script(src=pathToRoot+"js/timeline.js")
