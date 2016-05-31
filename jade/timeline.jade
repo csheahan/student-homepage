@@ -43,7 +43,7 @@ block body
                   div(class="timeline-date").
                     #{obj.date}
               else if obj.type == "event"
-                li(class="timeline-inverted #{obj.keywords}")
+                li(class="timeline #{obj.keywords}")
                   if obj.icon
                     div(class="timeline-badge #{obj.icon}")
                   div(class="timeline-card")

@@ -22,7 +22,7 @@ label {
 }
 
 .timeline > li {
-  margin-bottom: 20px;
+  padding-bottom: 20px;
   position: relative;
 }
 
