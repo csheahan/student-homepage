@@ -1,5 +1,6 @@
 #!/bin/bash
 
+echo '----- BEGIN -----'
 echo '--- Starting Full Build ---'
 
 # Clean out html folder
@@ -41,3 +42,17 @@ echo '--- Check for broken links ---'
 echo ''
 
 python scripts/check404.py html/*.html
+
+# Check for spelling errors
+echo ''
+echo '--- Check for spelling errors ---'
+echo ''
+
+python scripts/spellcheck.py \
+  --word_lists=scripts/wordlists/numbers.txt \
+  --word_lists=scripts/wordlists/unix_wordlist.txt \
+  --word_lists=scripts/wordlists/my_words.txt \
+  html/*.html
+
+echo ''
+echo '----- FINISHED -----'
