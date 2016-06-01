@@ -38,9 +38,9 @@ class tcolors:
 # <a> tags
 class SimpleLinkParser(HTMLParser):
     def handle_starttag(self, tag, attrs):
-        if tag == 'a':
+        if (tag == 'a'):
             for key, value in attrs:
-                if key == 'href':
+                if (key == 'href'):
                     if (re.match(r'^https?:\/\/', value)):
                         res = requests.get(value, verify=False)
                         
