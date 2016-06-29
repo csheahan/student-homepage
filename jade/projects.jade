@@ -33,7 +33,7 @@ block body
                   h2.
                     #{project.Name}
                   if project.Images
-                    div(id="#{project.shortName}Carousel" class="carousel slide" data-ride="carousel")
+                    div(id="#{project.shortName}Carousel" class="carousel slide" data-ride="carousel" data-interval="false")
                       // Indicators
                       ol(class="carousel-indicators")
                         each picurl, idx in project.Images
