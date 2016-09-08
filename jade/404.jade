@@ -1,0 +1,15 @@
+extends ./templates/mainTemplate.jade
+
+block append vars
+  - var pathToRoot = "./"
+
+block body
+  div(class="topPadding")
+    div(class="container")
+      h1.
+        404. Page not found.
+      h3.
+        The resource you requested does not exist.
+      h3.
+        Here is a picture of an owl instead.
+      img(src="img/photos_not_found/owl.png" class="projectPic")
