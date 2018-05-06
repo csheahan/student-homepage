@@ -1,3 +1,2 @@
-Right now it is mainly for distributing my resume and info.
-
-[Link Here](http://www.csheahan.com)
+An old way I used to make my website.
+This was used from around 2014 to May 2018.
